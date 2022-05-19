@@ -1,0 +1,26 @@
+/* =============
+    Product Design
+============= */
+
+
+.product-design{
+
+    &.container{
+
+        @include md{
+            grid-template-columns: 10% auto 10%;
+        }
+
+        .content{
+            
+            @include lg{
+                display: grid;
+                grid-template-columns: 45% auto;
+            }
+        }
+    }
+
+    img{
+        width:100%;
+    }
+}
