@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_navigation.scss"],"sourcesContent":["/* =============\n    Navigation\n============= */\n ul {\n    color:#4A3730;\n}"],"file":"_navigation.css"}
