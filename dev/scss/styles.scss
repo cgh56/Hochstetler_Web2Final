@@ -2,7 +2,7 @@
 
 // Helpers Styles
 @import "helpers/_mixins";
-@import "helpers/_variables.scss";
+@import "helpers/_variables";
 
 // Base Styles
 @import "base/_normalize";
@@ -15,11 +15,11 @@
 @import "components/_navigation";
 
 // Layout Styles
-@import "layout/_header.scss";
+@import "layout/header";
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/_hero.scss";
-@import "sections/_product-design.scss";
-@import "sections/_partners.scss";
-@import "sections/_hero-2.scss";
+@import "sections/_hero";
+@import "sections/_product-design";
+@import "sections/_partners";
+@import "sections/_hero-2";

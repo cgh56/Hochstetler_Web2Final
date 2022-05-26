@@ -1,10 +1,8 @@
 /* =============
     Header
 ============= */
-.content {
-  display: grid;
-  background: #E9D3DA;
-  grid-template-columns: 50% 50%;
+header {
+  background-color: #E9D3DA;
 }
 
 /*# sourceMappingURL=_header.css.map */

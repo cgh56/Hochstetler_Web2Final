@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["_header.scss"],"sourcesContent":["/* =============\n    Header\n============= */\n\n.content{\n        display:grid;\n        background: #E9D3DA;\n        grid-template-columns: 50% 50%;\n    }"],"file":"_header.css"}
+{"version":3,"names":[],"mappings":"","sources":["_header.scss"],"sourcesContent":["/* =============\n    Header\n============= */\n\nheader{\n    background-color: #E9D3DA;\n}"],"file":"_header.css"}

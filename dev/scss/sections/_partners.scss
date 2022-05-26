@@ -4,14 +4,14 @@
 
 
 .partners{
-margin-top: 100px;
-margin-bottom: 100px;
+margin-top: 400px;
+margin-bottom: 400px;
     .partners-content{
         ul{
             display:grid;
             gap:20px;
             list-style: none;
-            padding: 0;
+            padding: 20;
 
             @include md{
                 grid-template-columns: 50% 50%;

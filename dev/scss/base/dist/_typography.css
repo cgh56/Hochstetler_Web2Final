@@ -1,0 +1,19 @@
+/* =============
+    Typography
+============= */
+@font-face {
+  font-family: 'Barlow';
+  src: url("https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap") format(barlow);
+}
+
+p {
+  font-weight: 400;
+  line-height: 18px;
+}
+
+h2 {
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/*# sourceMappingURL=_typography.css.map */

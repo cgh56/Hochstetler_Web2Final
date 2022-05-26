@@ -1,1 +1,1 @@
-{"version":3,"sources":["_header.scss"],"names":[],"mappings":"AAGA,SACE,QAAS,KACT,WAAY,QACZ,sBAAuB,IAAI","file":"_header.min.css","sourcesContent":["/* =============\n    Header\n============= */\n\n.content{\n        display:grid;\n        background: #E9D3DA;\n        grid-template-columns: 50% 50%;\n    }"]}
+{"version":3,"sources":["_header.scss"],"names":[],"mappings":"AAGA,OACE,iBAAkB","file":"_header.min.css","sourcesContent":["/* =============\n    Header\n============= */\n\nheader{\n    background-color: #E9D3DA;\n}"]}
