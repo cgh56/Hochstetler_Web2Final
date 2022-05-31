@@ -2,8 +2,8 @@
     Typography
 ============= */
 @font-face {
-  font-family: 'Barlow';
-  src: url("https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap") format(barlow);
+  font-family: 'Barlow' 'sans-serif';
+  src: url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 }
 
 p {
@@ -12,7 +12,7 @@ p {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 40px;
 }
 

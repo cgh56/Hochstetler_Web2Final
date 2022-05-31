@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_hero-2.scss"],"sourcesContent":["/* =============\n    Hero 2\n============= */\n\n\n.hero-2{\n    img{\n        width: 50%;\n    }\n}"],"file":"_hero-2.css"}

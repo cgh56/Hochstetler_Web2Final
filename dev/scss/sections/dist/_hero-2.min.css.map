@@ -1,0 +1,1 @@
+{"version":3,"sources":["_hero-2.scss"],"names":[],"mappings":"AAGA,YACE,MAAO","file":"_hero-2.min.css","sourcesContent":["/* =============\n    Hero 2\n============= */\n\n\n.hero-2{\n    img{\n        width: 50%;\n    }\n}"]}

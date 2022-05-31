@@ -18,7 +18,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 100px;
+  margin: 20;
 }
 
 /**
@@ -33,7 +33,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-size: 14em;
   margin: 0.67em 0;
 }
 

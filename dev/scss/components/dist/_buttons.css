@@ -1,0 +1,17 @@
+/* =============
+    Buttons
+============= */
+nav {
+  font-weight: 300;
+  font-style: semibold;
+  color: #4A3730;
+}
+
+@font-face {
+  nav {
+    font-family: 'Barlow' 'sans-serif';
+    src: url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+  }
+}
+
+/*# sourceMappingURL=_buttons.css.map */

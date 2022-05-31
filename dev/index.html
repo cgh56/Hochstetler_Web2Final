@@ -5,37 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
+    <link><link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+    font-family: 'Barlow' 'sans-serif';
+    src: url("https://fonts.googleapis.com/css2?family=Barlow&display=swap" )}
+    </style>
+    <style>
+      .item1 { grid-area: header; }
+      .item3 { grid-area: main; }
+      .item4 { grid-area: right; }
+      .item5 { grid-area: footer; }
+      
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'main main main right right'
+          'footer footer footer footer footer';
+        gap: 0px;
+        background-color: #D1C9C7;
+        padding: 0px;
+      }
+      
+      .grid-container > div {
+        background-color: #D1C9C7;
+        text-align: right;
+        padding: 0px 0;
+        font-size: 20px;
+        font-family: 'Barlow' 
+      }
+
+      .grid-container > h2 {
+        background-color: white;
+        text-align: justify;
+        padding: 10px 0;
+        font-size: 30px;
+        font-family: 'Barlow' 
+      }
+
+      .grid-container > p {
+        background-color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 30px;
+        font-family: 'Barlow' 
+      }
+      </style>
+      <style> 
+      h1 {
+        background-color: #E9D3DA;
+      }
+      
+      div {
+        background-color: white;
+      }
+      
+      p {
+        background-color: white;
+      }</style>
     <title>Vault and Vine</title>
   </head>
     
   <!--Partners-->
   <body>
-    <header class="container">
-    <div class="header">    
-        <div class="content">
-        </div>
-            <img src="img/VV-logo.png" alt="Site Logo">
-  
+    <header class="container"> 
+      <div class="grid-container">
+        <div class="grid-item div">
+      <div class="content"> 
+          <img src="img/VV-logo.png" alt="Site Logo">
+          
           <nav>
             <ul>
-              <li><a href="components_navigation.scss">OUR STORY</a></li>
-              <li><a href="components_navigation.scss">SHOP</a></li>            
-              <li><a href="components_navigation.scss">FLORA</a></li>             
-              <li><a href="components_navigation.scss">CAFE</a></li>
+              <li><a href="components_navigation.scss"rel="stylesheet"></a>OUR STORY</a></li>
+              <li><a href="components_navigation.scss"rel="stylesheet"></a>SHOP</a></li>            
+              <li><a href="components_navigation.scss"rel="stylesheet"></a>FLORA</a></li>             
+              <li><a href="components_navigation.scss"rel="stylesheet"></a>CAFE</a></li>
               
             </ul>
           </nav>
+        </div>
       </header>
-    </div>
+  
     
 
     <!-- Partners -->
     <section class="partners container">
       <div class="content">
-        <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <div class="grid-container">
+          <div class="grid-item p">
           <img src="img/FLOWER-1.jpg" alt="flowers and plants">
           <p>Welcome to Vault + Vine. We are a floral studio and thoughtfully curated retail space in East Falls, Philadelphia. Founded in 2017, our small group of humans are working together to shape the world we wish to live in.</p> 
+          </p>
             
     </div>
   </section>
@@ -43,12 +104,14 @@
   <!-- Partners -->
   <section class="partners container">
     <div class="content">
+      <div class="grid-container">
+        <p class="grid-item p">
       <div>
         <img src="img/FLOWER-3.jpg" alt="OUR STORY plants">
         <h2>OUR STORY</h2>
-          <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+          
         <p>Vault + Vine  aspires to support our community however we can. Learn more about us and our mission.</p> 
-           <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+           
       </div>
     </div>
   </section>
@@ -56,12 +119,14 @@
   <!-- Partners -->
   <section class="partners container">
     <div class="content">
+      <div class="grid-container">
+        <div class="grid-item p">
       <div>
         <img src="img/FLOWER-3.jpg" alt="shop plants">
         <h2>SHOP</h2>
-          <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+          
         <p>Let Vault + Vine be your one stop shop for gifts and other items. Shop our local, sustainable, and unique offerings</p> 
-          <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+          
       </div>
     </div>
   </section>
@@ -69,12 +134,14 @@
   <!-- Partners -->
   <section class="partners container">
     <div class="content">
+      <div class="grid-container">
+        <div class="grid-item p">
       <div>
         <img src="img/FLOWER-4.jpg" alt="FLORA plants">
         <h2>FLORA</h2>
-           <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+           
         <p>Vault + Vine offers a wide variety of locally grown and sourced flowers and other plants. Come in and browse our selection or order your arrangement online.</p> 
-          <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+          
       </div>
     </div>
   </section>
@@ -82,12 +149,14 @@
     <!-- Partners -->
     <section class="partners container">
       <div class="content">
+        <div class="grid-container">
+          <div class="grid-item p">
         <div>
           <img src="img/coffee-2.jpg" alt="CAFE">
           <h2>CAFE</h2>
-            <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            
           <p>Enjoy locally sourced coffee, tea and pastries at our in house cafe. Check out our cafe hours and plan your visit.</p> 
-          <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+          
         </div>
       </div>
     </section>
@@ -95,10 +164,12 @@
      <!-- Partners -->
      <section class="partners container">
       <div class="content">
+        <div class="grid-container">
+          <h2 class="grid-item h2">
         <div>
           <img src="img/store-1.jpg" alt="store 1">
           <h2>ABOUT US</h2>
-             <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+             
           <p>Vault + Vine is a floral studio and thoughtfully curated retail space in East Falls, Philadelphia. Founded in 2017, we offer:</p>
           <p>Floral design services for weddings and events;
             Custom floral arrangements made daily and delivered;
@@ -107,7 +178,7 @@
             A café and gathering place.</p> 
           <img src="img/coffee-1.jpg" alt="coffee 1">
           <p>At the heart of our shop is love for our community and a desire to create, promote, and connect with our neighbors. Our vision is to create a community of businesses and customers that supports, promotes, and celebrates the local and global economy and by demanding accountability in every aspect of the supply chain.</p>
-            <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            
         </div>
       </div>
     </section>
