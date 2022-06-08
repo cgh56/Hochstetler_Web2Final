@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["_base.scss"],"sourcesContent":["/* =============\n    Base\n============= */\n\n.container{\n    display:grid; \n    grid-template-columns: 20px auto 20px;\n    grid-template-areas: \". content .\";}\n.content{\n        grid-area:content;\n        grid-template-columns: 50% auto 50%;\n    }\n\n"],"file":"_base.css"}

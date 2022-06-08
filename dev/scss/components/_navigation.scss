@@ -2,19 +2,76 @@
     Nav
 ============= */
 nav {
-    @font-face {
-        font-family: 'Barlow' 'sans-serif';
-        src: url("https://fonts.googleapis.com/css2?family=Barlow&display=swap")
-    }
-    font-weight: 600;
-    font-style: semibold;
-    color:#4A3730
+	// this makes the nav not show up on the mobile sizes
+    display: none;
+	background-color: #D1C9C7;
+	height: 100vh;
+	padding: 16px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50vw;
+
+	@include lg {
+		background-color: #D1C9C7;
+		display: block;
+		height: 100%;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+	aside {
+		display: flex;
+		justify-content: flex-end;
+
+		button {
+			background-color: transparent;
+			border-style: none;
+			color: $darkbrown;
+			
+			&:hover{ 
+				cursor: pointer; 
+			}
+		}
+	}
+	ul {
+		height: 100%;
+		padding-top: 20%;
+		@include lg {
+			align-items: center;
+			display: flex;
+			justify-content: flex-end;
+			padding-top: 0;
+		}
+		li {
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 24px;
+			text-align: right;
+			@include lg {
+				border-left: 1px solid #D1C9C7;
+				margin-bottom: 0;
+				margin-left: 16px;
+				padding-left: 24px;
+			}
+			a:link,
+            a:visited {
+				color: black;
+				font-size: 20px;
+				font-weight: 300;
+				text-decoration: none;
+				transition: 0.25s;
+				@include lg {
+					color: #4A3730;s
+				}
+				&:hover,
+                &:active {
+					color: #4A3730;
+				}
+			}
+			&:first-child {
+				border: none;
+			}
+		}
+	}
 }
-.container{
-    display:grid; 
-    grid-template-columns: 20px auto 20px;
-    grid-template-areas: ". content .";}
-.content{
-        grid-area:content;
-        grid-template-columns: 50% auto 50%;
-    }

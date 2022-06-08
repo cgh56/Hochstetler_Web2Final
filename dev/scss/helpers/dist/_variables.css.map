@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_variables.scss"],"sourcesContent":["/* =============\n    Variables\n============= */\n\n\n\n// Colors\n$white: #fff;\n$black: #000;\n$blushpink:#E9D3DA;\n$darkbeige: #D1C9C7;\n$darkbrown: #4A3730;\n"],"file":"_variables.css"}

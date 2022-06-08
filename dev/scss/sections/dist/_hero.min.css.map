@@ -1,0 +1,1 @@
+{"version":3,"sources":["_hero.scss"],"names":[],"mappings":"AAAA,UACE,MAAO","file":"_hero.min.css","sourcesContent":[".hero{\n    img{\n        width:100%;\n    }\n}"]}

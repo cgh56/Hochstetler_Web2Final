@@ -20,8 +20,6 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
 }
 @mixin rem-base($zoom: 100%) {
     //font-size: $zoom / 16px * $rem-base;
-
-    font-size: math.div($zoom, 16px) *  $rem-base;
 }
 @function rem-convert($to, $values...) {
     $result: ();
@@ -100,7 +98,18 @@ html {
     @include rem-base;
 }
 
+// Define the breakpoints
+// Small tablets and large smartphones
+$screen-sm-min: 576px;
 
+// Small tablets
+$screen-md-min: 768px;
+
+// Large tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large desktops
+$screen-xl-min: 1200px;
 
 
 /* ---------------- Media Queries ---------------- */
@@ -124,7 +133,7 @@ html {
 }
 //Usage
 // @include md{
-//     grid-template-columns: 20% 80%;
+//     grid-template-columns: 50% 50%;
 // }
 
 

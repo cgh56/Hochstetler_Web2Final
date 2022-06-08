@@ -2,13 +2,34 @@
     Header
 ============= */
 header {
-  background-color: #E9D3DA;
+  background-color: #D1C9C7;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: 0px;
+header img {
+  width: 200px;
+}
+
+nav {
+  width: 440px;
+  margin: 0px auto;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 0px;
+}
+
+li a {
+  display: block;
+  color: #D1C9C7;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  float: left;
 }
 
 /*# sourceMappingURL=_header.css.map */

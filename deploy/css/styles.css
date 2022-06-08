@@ -2,10 +2,6 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
-html {
-  font-size: 100%;
-}
-
 /* ---------------- Media Queries ---------------- */
 /* =============
     Variables
@@ -30,7 +26,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 20;
+  margin: 0;
 }
 
 /**
@@ -354,7 +350,7 @@ template {
 ============= */
 .container {
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 100%;
   grid-template-areas: ". content .";
 }
 
@@ -363,13 +359,17 @@ template {
   grid-template-columns: 50% auto 50%;
 }
 
+img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
-@font-face {
-  font-family: "Barlow" "sans-serif";
-  src: url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+body {
+  font-family: "Barlow";
 }
+
 p {
   font-weight: 400;
   line-height: 18px;
@@ -383,18 +383,6 @@ h2 {
 /* =============
     Buttons
 ============= */
-nav {
-  font-weight: 300;
-  font-style: semibold;
-  color: #4A3730;
-}
-@font-face {
-  nav {
-    font-family: "Barlow" "sans-serif";
-    src: url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
-  }
-}
-
 /* =============
     Forms
 ============= */
@@ -417,39 +405,155 @@ textarea {
     Nav
 ============= */
 nav {
-  font-weight: 600;
-  font-style: semibold;
-  color: #4A3730;
+  display: none;
+  background-color: #D1C9C7;
+  height: 100vh;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
 }
-@font-face {
+@media (min-width: 992px) {
   nav {
-    font-family: "Barlow" "sans-serif";
-    src: url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+    background-color: #D1C9C7;
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
   }
 }
-
-.container {
-  display: grid;
-  grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". content .";
+nav aside {
+  display: flex;
+  justify-content: flex-end;
 }
-
-.content {
-  grid-area: content;
-  grid-template-columns: 50% auto 50%;
+nav aside button {
+  background-color: transparent;
+  border-style: none;
+  color: #4A3730;
+}
+nav aside button:hover {
+  cursor: pointer;
+}
+nav ul {
+  height: 100%;
+  padding-top: 20%;
+}
+@media (min-width: 992px) {
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+}
+nav ul li {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  nav ul li {
+    border-left: 1px solid #D1C9C7;
+    margin-bottom: 0;
+    margin-left: 16px;
+    padding-left: 24px;
+  }
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  nav ul li a:link,
+nav ul li a:visited {
+    color: #D1C9C7;
+  }
+}
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
+  color: #D1C9C7;
+}
+nav ul li:first-child {
+  border: none;
 }
 
 /* =============
     Header
 ============= */
 header {
-  background-color: #E9D3DA;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+  padding: 24px 0;
+  position: fixed;
+  width: 100%;
+  background-color: #D1C9C7;
+  background-color: #D1C9C7;
+}
+header div {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger";
+}
+@media (min-width: 768px) {
+  header div {
+    grid-template-areas: "VV-logo.png";
+  }
+}
+@media (min-width: 992px) {
+  header div {
+    grid-template-areas: "VV-logo.png";
+  }
+}
+header div .burger-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  header div .burger-container {
+    display: none;
+  }
+}
+header div .burger-container button {
+  border-style: none;
+  background-color: transparent;
+  color: #4A3730;
+  font-size: 400px;
+}
+header div .burger-container button:hover {
+  cursor: pointer;
+}
+header img {
+  width: 200px;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: 0px;
+nav {
+  width: 440px;
+  margin: 0px auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 0px;
+}
+
+li a {
+  display: block;
+  color: #D1C9C7;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  float: left;
 }
 
 /* =============
@@ -483,77 +587,82 @@ footer .content p {
 /* =============
     Product Design
 ============= */
+.product-design {
+  display: grid;
+  grid-template-columns: 100%;
+}
 @media (min-width: 768px) {
-  .product-design.container {
-    grid-template-columns: 10% auto 10%;
+  .product-design {
+    grid-template-columns: 50% 50%;
   }
 }
 @media (min-width: 992px) {
-  .product-design.container .content {
-    display: grid;
-    grid-template-columns: 45% auto;
+  .product-design {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "our-story our-story shop" "flora . shop" "flora cafe cafe";
   }
 }
-.product-design img {
-  width: 50%;
+@media (min-width: 992px) {
+  .product-design .our-story-container {
+    grid-area: our-story;
+  }
+}
+@media (min-width: 992px) {
+  .product-design .shop-container {
+    grid-area: shop-story;
+  }
+}
+@media (min-width: 992px) {
+  .product-design .flora-container {
+    grid-area: flora-story;
+  }
+}
+@media (min-width: 992px) {
+  .product-design .cafe-container {
+    grid-area: cafe-story;
+  }
+}
+
+img {
+  width: 100%;
 }
 
 /* =============
     Partners
 ============= */
-.partners {
-  margin-top: 400px;
-  margin-bottom: 400px;
-}
-.partners .partners-content ul {
+.partners-grid {
   display: grid;
-  gap: 20px;
-  list-style: none;
-  padding: 20;
+  grid-template-columns: 100%;
 }
 @media (min-width: 768px) {
-  .partners .partners-content ul {
+  .partners-grid {
     grid-template-columns: 50% 50%;
   }
 }
 @media (min-width: 992px) {
-  .partners .partners-content ul {
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: "p1 p1 p1 p1 p1 p2 p2 p2 p3 p3" "p4 p4 p5 p5 p5 p5 p5 p6 p6 p6";
-  }
-}
-.partners .partners-content ul li {
-  background-color: aqua;
-  padding: 20px;
-}
-@media (min-width: 992px) {
-  .partners .partners-content ul .p1 {
-    grid-area: p1;
+  .partners-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "our-story our-story shop" "flora . shop" "flora cafe cafe";
   }
 }
 @media (min-width: 992px) {
-  .partners .partners-content ul .p2 {
-    grid-area: p2;
+  .partners-grid .our-story-container {
+    grid-area: our-story;
   }
 }
 @media (min-width: 992px) {
-  .partners .partners-content ul .p3 {
-    grid-area: p3;
+  .partners-grid .shop-container {
+    grid-area: shop-story;
   }
 }
 @media (min-width: 992px) {
-  .partners .partners-content ul .p4 {
-    grid-area: p4;
+  .partners-grid .flora-container {
+    grid-area: flora-story;
   }
 }
 @media (min-width: 992px) {
-  .partners .partners-content ul .p5 {
-    grid-area: p5;
-  }
-}
-@media (min-width: 992px) {
-  .partners .partners-content ul .p6 {
-    grid-area: p6;
+  .partners-grid .cafe-container {
+    grid-area: cafe-story;
   }
 }
 
@@ -561,5 +670,5 @@ footer .content p {
     Hero 2
 ============= */
 .hero-2 img {
-  width: 50%;
+  width: 100%;
 }

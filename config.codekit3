@@ -185,14 +185,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/dist\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/dist\/index.html",
-      "oF" : 0
-    },
     "\/deploy\/img\/coffee-1.jpg" : {
       "ft" : 16384,
       "iS" : 53932,
@@ -448,46 +440,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/base\/dist\/_base.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_base-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/base\/dist\/_base.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_base.css.map",
-      "oF" : 0
-    },
-    "\/dev\/scss\/base\/dist\/_base.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_base.min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/base\/dist\/_base.min.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_base.min.css.map",
-      "oF" : 0
-    },
     "\/dev\/scss\/base\/dist\/_normalize.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -526,46 +478,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/base\/dist\/_normalize.min.css.map",
-      "oF" : 0
-    },
-    "\/dev\/scss\/base\/dist\/_typography.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_typography-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/base\/dist\/_typography.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_typography.css.map",
-      "oF" : 0
-    },
-    "\/dev\/scss\/base\/dist\/_typography.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_typography.min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/base\/dist\/_typography.min.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/dist\/_typography.min.css.map",
       "oF" : 0
     },
     "\/dev\/scss\/components\/_buttons.scss" : {
@@ -612,46 +524,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/dev\/scss\/components\/dist\/_buttons.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/dist\/_buttons-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/components\/dist\/_buttons.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/dist\/_buttons.css.map",
-      "oF" : 0
-    },
-    "\/dev\/scss\/components\/dist\/_buttons.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/dist\/_buttons.min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/components\/dist\/_buttons.min.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/dist\/_buttons.min.css.map",
-      "oF" : 0
     },
     "\/dev\/scss\/components\/dist\/_navigation.css" : {
       "aP" : 1,
@@ -722,6 +594,46 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/scss\/helpers\/dist\/_variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/helpers\/dist\/_variables-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/helpers\/dist\/_variables.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/helpers\/dist\/_variables.css.map",
+      "oF" : 0
+    },
+    "\/dev\/scss\/helpers\/dist\/_variables.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/helpers\/dist\/_variables.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/helpers\/dist\/_variables.min.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/helpers\/dist\/_variables.min.css.map",
+      "oF" : 0
     },
     "\/dev\/scss\/layout\/_footer.scss" : {
       "aP" : 0,
@@ -853,7 +765,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/dist\/_hero-2.css" : {
+    "\/dev\/scss\/sections\/dist\/_hero.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -861,19 +773,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/dist\/_hero-2-min.css",
+      "oAP" : "\/dev\/scss\/sections\/dist\/_hero-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/dev\/scss\/sections\/dist\/_hero-2.css.map" : {
+    "\/dev\/scss\/sections\/dist\/_hero.css.map" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/dist\/_hero-2.css.map",
+      "oAP" : "\/dev\/scss\/sections\/dist\/_hero.css.map",
       "oF" : 0
     },
-    "\/dev\/scss\/sections\/dist\/_hero-2.min.css" : {
+    "\/dev\/scss\/sections\/dist\/_hero.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -881,16 +793,56 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/dist\/_hero-2.min-min.css",
+      "oAP" : "\/dev\/scss\/sections\/dist\/_hero.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/dev\/scss\/sections\/dist\/_hero-2.min.css.map" : {
+    "\/dev\/scss\/sections\/dist\/_hero.min.css.map" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/dist\/_hero-2.min.css.map",
+      "oAP" : "\/dev\/scss\/sections\/dist\/_hero.min.css.map",
+      "oF" : 0
+    },
+    "\/dev\/scss\/sections\/dist\/_partners.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/dist\/_partners-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/dist\/_partners.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/dist\/_partners.css.map",
+      "oF" : 0
+    },
+    "\/dev\/scss\/sections\/dist\/_partners.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/dist\/_partners.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/dev\/scss\/sections\/dist\/_partners.min.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/dist\/_partners.min.css.map",
       "oF" : 0
     },
     "\/dev\/scss\/styles.scss" : {

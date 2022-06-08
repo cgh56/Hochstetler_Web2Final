@@ -2,69 +2,43 @@
     Partners
 ============= */
 
+.partners-grid{
+    display: grid;
+    grid-template-columns: 100%;
 
-.partners{
-margin-top: 400px;
-margin-bottom: 400px;
-    .partners-content{
-        ul{
-            display:grid;
-            gap:20px;
-            list-style: none;
-            padding: 20;
+    @include md{
+        grid-template-columns: 50% 50%;
+    }
 
-            @include md{
-                grid-template-columns: 50% 50%;
+    @include lg{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "our-story our-story shop"
+        "flora . shop"
+        "flora cafe cafe";
+    }
 
-            }
+    .our-story-container{
+        @include lg{
+            grid-area: our-story;
+    }
+    }
 
-            @include lg{
-                grid-template-columns: repeat(10, 1fr);
-                grid-template-areas: 
-                "p1 p1 p1 p1 p1 p2 p2 p2 p3 p3"
-                "p4 p4 p5 p5 p5 p5 p5 p6 p6 p6";
-            }
+    .shop-container{
+        @include lg{
+            grid-area: shop-story;
+        }
+        }
 
-            li{
-                background-color:aqua;
-                padding:20px;
-            }
+    .flora-container{
+        @include lg{
+            grid-area: flora-story;
+        }
+        }
 
-            .p1{
-                @include lg{
-                    grid-area:p1;
-                }
-            }
-
-            .p2{
-                @include lg{
-                    grid-area:p2;
-                }
-            }
-
-            .p3{
-                @include lg{
-                    grid-area:p3;
-                }
-            }
-
-            .p4{
-                @include lg{
-                    grid-area:p4;
-                }
-            }
-
-            .p5{
-                @include lg{
-                    grid-area:p5;
-                }
-            }
-
-            .p6{
-                @include lg{
-                    grid-area:p6;
-                }
-            }
+    .cafe-container{
+        @include lg{
+            grid-area: cafe-story;
+        }
         }
     }
-}
