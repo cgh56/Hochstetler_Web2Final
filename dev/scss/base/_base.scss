@@ -4,11 +4,10 @@
 
 .container{
     display:grid; 
-    grid-template-columns: 100%;
+    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". content .";}
 .content{
         grid-area:content;
-        grid-template-columns: 50% auto 50%;
     }
 img{
     width:100%

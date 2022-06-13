@@ -354,12 +354,13 @@ template {
 ============= */
 .container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
+  grid-template-columns: 100%;
   grid-template-areas: ". content .";
 }
 
 .content {
   grid-area: content;
+  grid-template-columns: 50% auto 50%;
 }
 
 img {
@@ -369,48 +370,6 @@ img {
 /* =============
     Typography
 ============= */
-body {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin: none;
-}
-
-header {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #4A3730;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 /* =============
     Buttons
 ============= */
@@ -524,6 +483,7 @@ header {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   padding: 24px 0;
+  position: fixed;
   width: 100%;
   background-color: #D1C9C7;
   background-color: #D1C9C7;
@@ -531,7 +491,7 @@ header {
 header div {
   grid-area: header;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% auto;
   grid-template-areas: "logo burger";
 }
 @media (min-width: 768px) {
@@ -558,7 +518,7 @@ header div .burger-container button {
   border-style: none;
   background-color: transparent;
   color: #4A3730;
-  font-size: 40px;
+  font-size: 400px;
 }
 header div .burger-container button:hover {
   cursor: pointer;
@@ -589,137 +549,32 @@ li a {
 /* =============
     Footer
 ============= */
-footer {
-  background-color: #D1C9C7;
-  display: grid;
-}
-footer img {
-  width: 45px;
-}
-footer .ftcontent {
-  display: grid;
-  grid-template-columns: 20% 30% auto 20%;
-  grid-template-areas: "phone mail . social";
-}
-footer .phone {
-  grid-area: phone;
-}
-footer .mail {
-  grid-area: mail;
-}
-footer .social {
-  grid-area: social;
-  text-align: right;
-  padding-top: 25px;
-}
-
-/* .vault{
-        grid-area: 2022;
-    }
-
-    .all{
-        grid-area: all;
-    }
-
-    .priv{
-        grid-area: priv;
-    }
-
-    .ftcontent{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: right;
-
-    }
-*/
-/*.phone, .comp, .rights{
-    justify-content: left;
-}
-
-.social{
-    img{
-        padding-left: 5px;
-    }
-    display: 100%;
-    margin-left: 89%;
-    margin-top: -115px;
-    padding: 5px;
-}
-
-.priv{
-    display: 100%;
-    margin-left: 91%;
-    margin-top: -20px;
-    padding: 10px;
-}
-
-.rights{
-
-    margin-left: 200px;
-
-    margin-top: -45px;
-}
-    /*.mail{
-      // display: flex;
-   // justify-content: right ;
-    grid-area: mail;
-    }
-
-    .priv{
-        //display: flex;
-      // justify-content: right ;
-        grid-area: priv;
-    }
-
-    .rights{
-      // display: flex;
-    //justify-content: right ;
-    grid-area: rights;
-    }
-
-    .phone{
-        grid-area: phone;
-    }
-
-    .social{
-        grid-area: social;
-    }
-
-    .comp{
-        grid-area: comp;
-    } */
-.about-contain .abouttitle {
-  display: flex;
-  justify-content: center;
-}
-.about-contain .aboutcontent {
+footer .content {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "aboutlist about1" "about2 aboutdescrip";
-}
-.about-contain .aboutlist {
-  grid-area: aboutlist;
-}
-.about-contain .about1 {
-  grid-area: about1;
-}
-.about-contain .about2 {
-  grid-area: about2;
-}
-.about-contain .aboutdescrip {
-  grid-area: aboutdescrip;
+  grid-template-areas: "logo josh" "logo copyright";
 }
 @media (min-width: 768px) {
-  .about-contain img {
-    width: 289px;
-    height: 280px;
+  footer .content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo josh copyright";
   }
 }
-@media (min-width: 992px) {
-  .about-contain img {
-    width: 460px;
-    height: 433px;
-  }
+footer .content img {
+  grid-area: logo;
+}
+footer .content h3 {
+  grid-area: josh;
+}
+footer .content p {
+  grid-area: copyright;
+}
+
+/* =============
+    Hero 2
+============= */
+.hero-2 img {
+  width: 100%;
 }
 
 .hero img {
@@ -727,130 +582,41 @@ footer .social {
 }
 
 /* =============
-    Card
+    Partners
 ============= */
-.card-grid {
-  background-color: #E9D3DA;
+.partners-grid {
   display: grid;
-  gap: 16px;
-}
-.card-grid button {
-  border: none;
-  background: none;
-}
-.card-grid button img {
-  width: 40px;
-  height: 40px;
-}
-.card-grid article {
-  background-color: #fff;
-}
-@media (min-width: 576px) {
-  .card-grid img {
-    width: 332px;
-    height: 320px;
-    display: flex;
-    margin: auto;
-  }
-  .card-grid p {
-    display: flex;
-    margin: 0px 68px 0px 68px;
-  }
-  .card-grid button {
-    display: contents;
-  }
+  grid-template-columns: 100%;
 }
 @media (min-width: 768px) {
-  .card-grid {
+  .partners-grid {
     grid-template-columns: 50% 50%;
-    grid-template-areas: "story shop" "cafe flora";
   }
 }
 @media (min-width: 992px) {
-  .card-grid {
+  .partners-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "story story shop" "flora .  shop" "flora cafe cafe";
+    grid-template-areas: "our-story our-story shop" "flora . shop" "flora cafe cafe";
   }
-  .card-grid img {
-    margin: 0;
+}
+@media (min-width: 992px) {
+  .partners-grid .our-story-container {
+    grid-area: our-story;
   }
-  .card-grid .ourstory {
-    margin: 16px 120px 100px 16px;
-    grid-area: story;
-    padding: 16px;
+}
+@media (min-width: 992px) {
+  .partners-grid .shop-container {
+    grid-area: shop-story;
   }
-  .card-grid .ourstory .storycontain {
-    margin-top: -24px;
+}
+@media (min-width: 992px) {
+  .partners-grid .flora-container {
+    grid-area: flora-story;
   }
-  .card-grid .ourstory .story-content {
-    margin: -345px 0px 240px 300px;
-  }
-  .card-grid .ourstory .headline .storyphoto {
-    display: flex;
-    justify-content: left;
-    padding: 16px;
-  }
-  .card-grid .ourstory .story-button {
-    background-color: none;
-    display: flex;
-    justify-content: end;
-  }
-  .card-grid .ourstory .shop {
-    margin: 16px 120px 100px 16px;
-    padding: none;
-    grid-area: shop;
-  }
-  .card-grid .ourstory .shop .shopcontain .shop-content {
-    justify-content: right;
-    margin: 0px 25px 0px -50px;
-  }
-  .card-grid .ourstory .shop .shopcontain .shop-button {
-    display: flex;
-    justify-content: center;
-  }
-  .card-grid .ourstory .shop .shopcontain .shopphoto {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-  }
-  .card-grid .ourstory .cafe {
-    margin: 16px 120px 100px 16px;
-    grid-area: cafe;
-    padding: 16px;
-  }
-  .card-grid .ourstory .cafe .cafecontain {
-    margin-top: -24px;
-  }
-  .card-grid .ourstory .cafe .cafe-content {
-    margin: -345px 0px 240px 300px;
-  }
-  .card-grid .ourstory .cafe .cafephoto {
-    display: flex;
-    justify-content: left;
-    padding: 16px;
-  }
-  .card-grid .ourstory .cafebutton {
-    background-color: none;
-    display: flex;
-    justify-content: end;
-  }
-  .card-grid .ourstory .flora {
-    margin: 16px 120px 100px 16px;
-    padding: none;
-    grid-area: flora;
-  }
-  .card-grid .ourstory .flora .floracontain .flora-content {
-    justify-content: left;
-    margin: 0px 25px 0px -50px;
-  }
-  .card-grid .ourstory .flora .floracontain .flora-button {
-    display: flex;
-    justify-content: center;
-  }
-  .card-grid .ourstory .flora .floracontain .floraphoto {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
+}
+@media (min-width: 992px) {
+  .partners-grid .cafe-container {
+    grid-area: cafe-story;
   }
 }
 

@@ -1,0 +1,16 @@
+/* =============
+    Base
+============= */
+.container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". content .";
+}
+
+.content {
+  grid-area: content;
+}
+
+img {
+  width: 100%;
+}

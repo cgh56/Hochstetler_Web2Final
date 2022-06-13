@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["_hero.scss"],"sourcesContent":[".hero{\n    img{\n        width:100%;\n    }\n}"],"file":"_hero.css"}

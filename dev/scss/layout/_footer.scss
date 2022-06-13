@@ -2,36 +2,158 @@
     Footer
 ============= */
 
-
 footer{
-    
-    .content{
-        display:grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
-        "logo josh"
-        "logo copyright"
-        ;
+    background-color: #D1C9C7;
+    display: grid;
 
-        @include md{
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-            "logo josh copyright"
-            ;
-        }
-
-        img{
-            grid-area:logo;
-        }
-
-        h3{
-            grid-area:josh;
-        }
-
-        p{
-            grid-area:copyright;
-        }
-
+    img{
+        width: 45px;
     }
+    
+
+   // .words{
+       .ftcontent{
+
+        display: grid;
+        grid-template-columns: 20% 30% auto 20%;
+        grid-template-areas: 
+        "phone mail . social";
+    
+
+        }
+
+        .phone{
+            grid-area: phone;
+        }
+
+        .mail{
+            grid-area: mail;
+        }
+
+        .social{
+            grid-area: social;
+            text-align: right;
+            padding-top: 25px;
+        }
 
 }
+   /* .vault{
+        grid-area: 2022;
+    }
+
+    .all{
+        grid-area: all;
+    }
+
+    .priv{
+        grid-area: priv;
+    }
+
+    .ftcontent{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: right;
+
+    }
+*/
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*.phone, .comp, .rights{
+        justify-content: left;
+    }
+
+    .social{
+        img{
+            padding-left: 5px;
+        }
+        display: 100%;
+        margin-left: 89%;
+        margin-top: -115px;
+        padding: 5px;
+    }
+
+    .priv{
+        display: 100%;
+        margin-left: 91%;
+        margin-top: -20px;
+        padding: 10px;
+    }
+
+    .rights{
+        
+        margin-left: 200px;
+    
+        margin-top: -45px;
+    }
+        /*.mail{
+          // display: flex;
+       // justify-content: right ;
+        grid-area: mail;
+        }
+
+        .priv{
+            //display: flex;
+          // justify-content: right ;
+            grid-area: priv;
+        }
+
+        .rights{
+          // display: flex;
+        //justify-content: right ;
+        grid-area: rights;
+        }
+
+        .phone{
+            grid-area: phone;
+        }
+
+        .social{
+            grid-area: social;
+        }
+
+        .comp{
+            grid-area: comp;
+        } */
+   // display: grid;
+    //grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-areas: 
+   // "phone mail social"
+   // "comp rights priv"; 
+   

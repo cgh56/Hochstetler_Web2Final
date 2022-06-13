@@ -1,80 +1,78 @@
 /* =============
     Header
 ============= */
-
 header{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+    padding: 24px 0;
+    width: 100%;
+    background-color:#D1C9C7 ;
+
+
+    div{
+        grid-area: header;
+
         display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". header .";
-        padding: 24px 0;
-        position: fixed;
-        width: 100%;
-        background-color:#D1C9C7 ;
-    
-    
-        div{
-            grid-area: header;
-    
-            display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas: "logo burger";
-    
-            @include md{
-                grid-template-areas: "VV-logo.png";
-            }
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "logo burger";
+
+        @include md{
+            grid-template-areas: "VV-logo.png";
+        }
+        @include lg{
+            grid-template-areas: "VV-logo.png";
+
+        }
+
+
+        .burger-container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
             @include lg{
-                grid-template-areas: "VV-logo.png";
-    
+                display: none;
             }
 
-    
-            .burger-container{
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-    
-                @include lg{
-                    display: none;
-                }
-    
-                button{
-                    border-style: none;
-                    background-color: transparent;
-                    color: #4A3730;
-                    font-size: 400px;
-    
-                    &:hover{
-                        cursor: pointer;
-                    }
+            button{
+                border-style: none;
+                background-color: transparent;
+                color: #4A3730;
+                font-size: 40px;
+
+                &:hover{
+                    cursor: pointer;
                 }
             }
         }
-    
-
-    background-color: #D1C9C7;
-    img{
-        width: 200px;
     }
+
+
+background-color: #D1C9C7;
+img{
+    width: 200px;
+}
 
 }
 
- nav {
-	width: 440px;
-	margin: 0px auto;
+nav {
+width: 440px;
+margin: 0px auto;
 }
 
 ul {
-	list-style-type: none;
-	padding-top: 0px;
+list-style-type: none;
+padding-top: 0px;
 }
 
 li a {
-	display: block;
-	color: #D1C9C7;;
-	padding: 15px 15px 15px 15px;
-	text-decoration: none;
-	font-size: 15px;
-	float: left;
+display: block;
+color: #D1C9C7;;
+padding: 15px 15px 15px 15px;
+text-decoration: none;
+font-size: 15px;
+float: left;
 }
 
 

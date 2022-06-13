@@ -1,5 +1,5 @@
 /* =============
-    Nav
+    Navigation
 ============= */
 nav {
 	// this makes the nav not show up on the mobile sizes
@@ -27,7 +27,7 @@ nav {
 		button {
 			background-color: transparent;
 			border-style: none;
-			color: $darkbrown;
+			
 			
 			&:hover{ 
 				cursor: pointer; 
@@ -62,9 +62,9 @@ nav {
 				text-decoration: none;
 				transition: 0.25s;
 				@include lg {
-					color: #4A3730;s
+					color: #4A3730;
 				}
-				&:hover,
+				&:hover 
                 &:active {
 					color: #4A3730;
 				}
