@@ -385,17 +385,8 @@ header {
   text-transform: uppercase;
 }
 
-.herotext {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-}
-
 h1 {
-  font-family: "Barlow Semi Condensed";
+  font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -405,31 +396,12 @@ h1 {
 }
 
 h2 {
-  font-family: "Barlow Semi Condensed";
+  font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
   text-align: center;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-h5 {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -458,6 +430,91 @@ textarea {
     Navigation
 ============= */
 /* =============
+    Nav
+============= */
+nav {
+  display: none;
+  background-color: #D1C9C7;
+  height: 100vh;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+}
+@media (min-width: 992px) {
+  nav {
+    background-color: #D1C9C7;
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+nav aside {
+  display: flex;
+  justify-content: flex-end;
+}
+nav aside button {
+  background-color: transparent;
+  border-style: none;
+  color: #4A3730;
+}
+nav aside button:hover {
+  cursor: pointer;
+}
+nav ul {
+  height: 100%;
+  padding-top: 20%;
+}
+@media (min-width: 992px) {
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+}
+nav ul li {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  nav ul li {
+    border-left: 1px solid #D1C9C7;
+    margin-bottom: 0;
+    margin-left: 16px;
+    padding-left: 24px;
+  }
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  nav ul li a:link,
+nav ul li a:visited {
+    color: #4A3730;
+  }
+}
+nav ul li a:link:hover nav ul li a:link:active,
+nav ul li a:link:hover nav ul li a:visited:active,
+nav ul li a:visited:hover nav ul li a:link:active,
+nav ul li a:visited:hover nav ul li a:visited:active {
+  color: #4A3730;
+}
+nav ul li:first-child {
+  border: none;
+}
+
+/* =============
     Header
 ============= */
 header {
@@ -468,42 +525,33 @@ header {
 header .logo {
   width: fit-content;
 }
-header .nav {
-  display: flex;
-  justify-content: end;
-  padding-top: 8px;
-  padding-right: 16px;
-}
-header .nav .nav1, header .nav .nav2, header .nav .nav3, header .nav .nav4 {
-  padding: 5px;
-  padding-left: 30px;
-}
 header .content {
   display: grid;
   grid-template-columns: 20% auto;
   grid-template-areas: "logo nav";
 }
 
-/*.container{
-
-    img{
-        display:grid;
-        width: fit-content;
-        margin-right: 50%;
-        padding: none;
-
-
-    }
+.nav {
+  display: flex;
+  justify-content: end;
+  padding-top: 8px;
+  padding-right: 16px;
+}
+.nav .nav1, .nav .nav2, .nav .nav3, .nav .nav4 {
+  padding: 5px;
+  padding-left: 30px;
+}
+@media (min-width: 576px) {
+  .nav .nav1, .nav .nav2, .nav .nav3, .nav .nav4 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .nav .nav1, .nav .nav2, .nav .nav3, .nav .nav4 {
+    display: none;
+  }
 }
 
-.nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "nav1 nav2 nav3 nav4";
-    margin-left: 50%; 
-}
-*/
 /* =============
     Footer
 ============= */
@@ -531,84 +579,157 @@ footer .social {
   padding-top: 25px;
 }
 
-/* .vault{
-        grid-area: 2022;
-    }
-
-    .all{
-        grid-area: all;
-    }
-
-    .priv{
-        grid-area: priv;
-    }
-
-    .ftcontent{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: right;
-
-    }
-*/
-/*.phone, .comp, .rights{
-    justify-content: left;
-}
-
-.social{
-    img{
-        padding-left: 5px;
-    }
-    display: 100%;
-    margin-left: 89%;
-    margin-top: -115px;
-    padding: 5px;
-}
-
-.priv{
-    display: 100%;
-    margin-left: 91%;
-    margin-top: -20px;
-    padding: 10px;
-}
-
-.rights{
-
-    margin-left: 200px;
-
-    margin-top: -45px;
-}
-    /*.mail{
-      // display: flex;
-   // justify-content: right ;
-    grid-area: mail;
-    }
-
-    .priv{
-        //display: flex;
-      // justify-content: right ;
-        grid-area: priv;
-    }
-
-    .rights{
-      // display: flex;
-    //justify-content: right ;
-    grid-area: rights;
-    }
-
-    .phone{
-        grid-area: phone;
-    }
-
-    .social{
-        grid-area: social;
-    }
-
-    .comp{
-        grid-area: comp;
-    } */
 .card-grid {
   background-color: #E9D3DA;
+  gap: 16px;
   display: grid;
+  grid-template-columns: 1fr 100%;
+}
+.card-grid button {
+  border: none;
+  background: none;
+}
+.card-grid button img {
+  width: 40px;
+  height: 40px;
+}
+.card-grid article {
+  background-color: #fff;
+}
+@media (min-width: 576px) {
+  .card-grid img {
+    width: 332px;
+    height: 320px;
+    margin: auto;
+  }
+  .card-grid p {
+    display: flex;
+    margin: 0px 68px 0px 68px;
+  }
+  .card-grid button {
+    display: contents;
+  }
+}
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "story shop" "cafe flora";
+  }
+}
+@media (min-width: 992px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "our-story our-story shop" "flora . shop" "flora cafe cafe";
+  }
+}
+@media (min-width: 992px) {
+  .card-grid .our-story-container {
+    grid-area: our-story;
+  }
+  .card-grid .our-story-container .ourstory {
+    margin: 16px 120px 100px 16px;
+    grid-area: story;
+    padding: 16px;
+  }
+  .card-grid .our-story-container .ourstory .storycontain {
+    margin-top: -24px;
+  }
+  .card-grid .our-story-container .ourstory .story-content {
+    margin: -345px 0px 240px 300px;
+  }
+  .card-grid .our-story-container .storyphoto {
+    display: flex;
+    justify-content: left;
+    padding: 16px;
+  }
+  .card-grid .our-story-container .story-button {
+    background-color: none;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (min-width: 992px) {
+  .shop-container {
+    grid-area: shop-story;
+  }
+}
+.shop-container .shop {
+  margin: 16px 120px 100px 16px;
+  padding: none;
+  grid-area: shop;
+}
+.shop-container .shop .shopcontain .shop-content {
+  justify-content: right;
+  margin: 0px 25px 0px -50px;
+}
+.shop-container .shop .shopcontain .shop-button {
+  display: flex;
+  justify-content: center;
+}
+.shop-container .shop .shopcontain .shopphoto {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+@media (min-width: 992px) {
+  .flora-container {
+    grid-area: flora-story;
+  }
+}
+.flora-container .flora {
+  margin: 16px 120px 100px 16px;
+  padding: none;
+  grid-area: flora;
+}
+.flora-container .flora .floracontain .flora-content {
+  justify-content: left;
+  margin: 0px 25px 0px -50px;
+}
+.flora-container .flora .floracontain .flora-button {
+  display: flex;
+  justify-content: center;
+}
+.flora-container .flora .floracontain .floraphoto {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+@media (min-width: 992px) {
+  .cafe-container {
+    grid-area: cafe-story;
+  }
+}
+.cafe-container .cafe {
+  margin: 16px 120px 100px 16px;
+  grid-area: cafe;
+  padding: 16px;
+}
+.cafe-container .cafe .cafecontain {
+  margin-top: -24px;
+}
+.cafe-container .cafe .cafe-content {
+  margin: -345px 0px 240px 300px;
+}
+.cafe-container .cafe .cafephoto {
+  display: flex;
+  justify-content: left;
+  padding: 16px;
+}
+.cafe-container .cafebutton {
+  background-color: none;
+  display: flex;
+  justify-content: end;
+}
+
+img {
+  width: 100%;
+}
+
+.card-grid {
+  background-color: #E9D3DA;
   gap: 16px;
 }
 .card-grid button {
@@ -626,7 +747,6 @@ footer .social {
   .card-grid img {
     width: 332px;
     height: 320px;
-    display: flex;
     margin: auto;
   }
   .card-grid p {
@@ -662,73 +782,73 @@ footer .social {
   .card-grid .ourstory .story-content {
     margin: -345px 0px 240px 300px;
   }
-  .card-grid .ourstory .storyphoto {
+  .card-grid .storyphoto {
     display: flex;
     justify-content: left;
     padding: 16px;
   }
-  .card-grid .story-button {
-    background-color: none;
-    display: flex;
-    justify-content: end;
-  }
-  .card-grid .shop {
-    margin: 16px 120px 100px 16px;
-    padding: none;
-    grid-area: shop;
-  }
-  .card-grid .shop .shopcontain .shop-content {
-    justify-content: right;
-    margin: 0px 25px 0px -50px;
-  }
-  .card-grid .shop .shopcontain .shop-button {
-    display: flex;
-    justify-content: center;
-  }
-  .card-grid .shop .shopcontain .shopphoto {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-  }
-  .card-grid .cafe {
-    margin: 16px 120px 100px 16px;
-    grid-area: cafe;
-    padding: 16px;
-  }
-  .card-grid .cafe .cafecontain {
-    margin-top: -24px;
-  }
-  .card-grid .cafe .cafe-content {
-    margin: -345px 0px 240px 300px;
-  }
-  .card-grid .cafe .cafephoto {
-    display: flex;
-    justify-content: left;
-    padding: 16px;
-  }
-  .card-grid .cafebutton {
-    background-color: none;
-    display: flex;
-    justify-content: end;
-  }
-  .card-grid .flora {
-    margin: 16px 120px 100px 16px;
-    padding: none;
-    grid-area: flora;
-  }
-  .card-grid .flora .floracontain .flora-content {
-    justify-content: left;
-    margin: 0px 25px 0px -50px;
-  }
-  .card-grid .flora .floracontain .flora-button {
-    display: flex;
-    justify-content: center;
-  }
-  .card-grid .flora .floracontain .floraphoto {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-  }
+}
+.card-grid .story-button {
+  background-color: none;
+  display: flex;
+  justify-content: end;
+}
+.card-grid .shop {
+  margin: 16px 120px 100px 16px;
+  padding: none;
+  grid-area: shop;
+}
+.card-grid .shop .shopcontain .shop-content {
+  justify-content: right;
+  margin: 0px 25px 0px -50px;
+}
+.card-grid .shop .shopcontain .shop-button {
+  display: flex;
+  justify-content: center;
+}
+.card-grid .shop .shopcontain .shopphoto {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+.card-grid .cafe {
+  margin: 16px 120px 100px 16px;
+  grid-area: cafe;
+  padding: 16px;
+}
+.card-grid .cafe .cafecontain {
+  margin-top: -24px;
+}
+.card-grid .cafe .cafe-content {
+  margin: -345px 0px 240px 300px;
+}
+.card-grid .cafe .cafephoto {
+  display: flex;
+  justify-content: left;
+  padding: 16px;
+}
+.card-grid .cafebutton {
+  background-color: none;
+  display: flex;
+  justify-content: end;
+}
+.card-grid .flora {
+  margin: 16px 120px 100px 16px;
+  padding: none;
+  grid-area: flora;
+}
+.card-grid .flora .floracontain .flora-content {
+  justify-content: left;
+  margin: 0px 25px 0px -50px;
+}
+.card-grid .flora .floracontain .flora-button {
+  display: flex;
+  justify-content: center;
+}
+.card-grid .flora .floracontain .floraphoto {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
 }
 
 .carousel {
@@ -738,8 +858,8 @@ footer .social {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .carousel img {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   border: none;
 }
 
@@ -781,104 +901,22 @@ footer .social {
   }
 }
 
-.herostory {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". herocontent .";
-}
-.herostory .herocontent {
-  grid-area: herocontent;
-}
-
-.hp2, .hp3 {
-  font-weight: 400;
-}
-
-.herotitle {
-  display: flex;
-  justify-content: center;
-}
-
-.diff {
-  background-color: #E9D3DA;
-}
-.diff .diffheader {
-  display: flex;
-  justify-content: center;
-}
-.diff .diffsub {
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-}
-.diffphoto {
-  display: flex;
-  margin: auto;
-}
-@media (min-width: 576px) {
-  .diffphoto {
-    width: 393px;
-    height: 491px;
-  }
-}
-@media (min-width: 992px) {
-  .diffphoto {
-    width: 616px;
-    height: 790px;
-  }
-}
-@media (min-width: 1200px) {
-  .diffphoto {
-    width: 696px;
-    height: 893px;
-  }
-}
-
-.list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-}
-
-.listul {
+.carousel {
   list-style: none;
-  /*display: flex;
-  align-items: flex-end;
-  padding: 5px; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "triroast randomtea boltedblue" "oldblood stitchprism crustvegan" "zoet cuttalossa nuance";
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.listul img {
-  width: 40px;
-  height: 40px;
-  margin: 20px 200px 0px 20px;
+.carousel img {
+  width: 20px;
+  height: 20px;
+  border: none;
 }
 
-.peicha {
-  display: flex;
-  margin: auto;
-}
-@media (min-width: 576px) {
-  .peicha {
-    width: 393px;
-    height: 585px;
-  }
-}
-@media (min-width: 992px) {
-  .peicha {
-    width: 613px;
-    height: 917px;
-  }
-}
-@media (min-width: 1200px) {
-  .peicha {
-    width: 696px;
-    height: 1039px;
-  }
+.herotxt {
+  justify-content: center;
 }
 
-.foundertext {
-  display: flex;
-  margin: auto;
+.container {
+  justify-content: center;
 }

@@ -1,8 +1,8 @@
 .about-contain{
     
- .abouttitle{
-    display: flex;
-    justify-content: center;
+    .abouttitle{
+        display: flex;
+        justify-content: center;
     }
  .aboutcontent{
      display: grid;
@@ -10,25 +10,20 @@
      grid-template-areas: 
      "aboutlist about1"
      "about2 aboutdescrip";
+     
      }
  .aboutlist{
      grid-area: aboutlist;
  }
- .about1{
-     grid-area: about1;
+.about1{
+    grid-area: about1;
 }
-
- .about2{
-     grid-area: about2;
+.about2{
+    grid-area: about2;
+} 
+.aboutdescrip{
+    grid-area: aboutdescrip;
 }
- 
- .aboutdescrip{
-     grid-area: aboutdescrip;
-}
-
-
-
-
 @include md{
     img{
         width: 289px;

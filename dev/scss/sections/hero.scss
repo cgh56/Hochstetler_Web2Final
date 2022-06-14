@@ -1,0 +1,17 @@
+.carousel{
+    list-style: none;
+    img{
+        width: 20px;
+        height: 20px;
+        border:none;
+        
+    }
+    display:flex;
+    justify-content:center;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+        
+}
+ 
+.herotxt{
+    justify-content: center;
+}

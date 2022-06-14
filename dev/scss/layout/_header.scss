@@ -10,21 +10,29 @@ header{
     .logo{
         width: fit-content;
     }
-    .nav{
-        display:flex;
-        justify-content: end;
-        padding-top: 8px;
-        padding-right: 16px;
-        .nav1, .nav2, .nav3, .nav4 {
-            padding: 5px;
-            padding-left: 30px;
-            
-        }
-    }
+    
     .content{
         display:grid;
         grid-template-columns: 20% auto;
         grid-template-areas:
         "logo nav"
+    }
+}
+.nav{
+    display:flex;
+    justify-content: end;
+    padding-top: 8px;
+    padding-right: 16px;
+    .nav1, .nav2, .nav3, .nav4 {
+        padding: 5px;
+        padding-left: 30px;
+    
+        @include sm{
+            display: none;
+        }
+        
+        @include md{
+            display: none;
+        }
     }
 }
