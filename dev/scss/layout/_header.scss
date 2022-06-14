@@ -27,12 +27,5 @@ header{
         padding: 5px;
         padding-left: 30px;
     
-        @include sm{
-            display: none;
-        }
-        
-        @include md{
-            display: none;
-        }
     }
 }
