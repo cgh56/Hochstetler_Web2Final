@@ -352,14 +352,8 @@ template {
 /* =============
     Base
 ============= */
-.container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". content .";
-}
-
-.content {
-  grid-area: content;
+body {
+  margin: none;
 }
 
 img {
@@ -391,8 +385,17 @@ header {
   text-transform: uppercase;
 }
 
-h1 {
+.herotext {
   font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Barlow Semi Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -402,12 +405,31 @@ h1 {
 }
 
 h2 {
-  font-family: "Barlow";
+  font-family: "Barlow Semi Condensed";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -435,157 +457,53 @@ textarea {
 /* =============
     Navigation
 ============= */
-nav {
-  display: none;
-  background-color: #D1C9C7;
-  height: 100vh;
-  padding: 16px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50vw;
-}
-@media (min-width: 992px) {
-  nav {
-    background-color: #D1C9C7;
-    display: block;
-    height: 100%;
-    padding: 0;
-    position: relative;
-    width: 100%;
-  }
-}
-nav aside {
-  display: flex;
-  justify-content: flex-end;
-}
-nav aside button {
-  background-color: transparent;
-  border-style: none;
-}
-nav aside button:hover {
-  cursor: pointer;
-}
-nav ul {
-  height: 100%;
-  padding-top: 20%;
-}
-@media (min-width: 992px) {
-  nav ul {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0;
-  }
-}
-nav ul li {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 24px;
-  text-align: right;
-}
-@media (min-width: 992px) {
-  nav ul li {
-    border-left: 1px solid #D1C9C7;
-    margin-bottom: 0;
-    margin-left: 16px;
-    padding-left: 24px;
-  }
-}
-nav ul li a:link,
-nav ul li a:visited {
-  color: black;
-  font-size: 20px;
-  font-weight: 300;
-  text-decoration: none;
-  transition: 0.25s;
-}
-@media (min-width: 992px) {
-  nav ul li a:link,
-nav ul li a:visited {
-    color: #4A3730;
-  }
-}
-nav ul li a:link:hover nav ul li a:link:active,
-nav ul li a:link:hover nav ul li a:visited:active,
-nav ul li a:visited:hover nav ul li a:link:active,
-nav ul li a:visited:hover nav ul li a:visited:active {
-  color: #4A3730;
-}
-nav ul li:first-child {
-  border: none;
-}
-
 /* =============
     Header
 ============= */
 header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
+  background-color: #D1C9C7;
+  grid-template-columns: 40px auto 40px;
   grid-template-areas: ". header .";
-  padding: 24px 0;
-  width: 100%;
-  background-color: #D1C9C7;
-  background-color: #D1C9C7;
 }
-header div {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "logo burger";
+header .logo {
+  width: fit-content;
 }
-@media (min-width: 768px) {
-  header div {
-    grid-template-areas: "VV-logo.png";
-  }
-}
-@media (min-width: 992px) {
-  header div {
-    grid-template-areas: "VV-logo.png";
-  }
-}
-header div .burger-container {
+header .nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: end;
+  padding-top: 8px;
+  padding-right: 16px;
 }
-@media (min-width: 992px) {
-  header div .burger-container {
-    display: none;
-  }
+header .nav .nav1, header .nav .nav2, header .nav .nav3, header .nav .nav4 {
+  padding: 5px;
+  padding-left: 30px;
 }
-header div .burger-container button {
-  border-style: none;
-  background-color: transparent;
-  color: #4A3730;
-  font-size: 40px;
-}
-header div .burger-container button:hover {
-  cursor: pointer;
-}
-header img {
-  width: 200px;
+header .content {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "logo nav";
 }
 
-nav {
-  width: 440px;
-  margin: 0px auto;
+/*.container{
+
+    img{
+        display:grid;
+        width: fit-content;
+        margin-right: 50%;
+        padding: none;
+
+
+    }
 }
 
-ul {
-  list-style-type: none;
-  padding-top: 0px;
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav1 nav2 nav3 nav4";
+    margin-left: 50%; 
 }
-
-li a {
-  display: block;
-  color: #D1C9C7;
-  padding: 15px 15px 15px 15px;
-  text-decoration: none;
-  font-size: 15px;
-  float: left;
-}
-
+*/
 /* =============
     Footer
 ============= */
@@ -688,47 +606,6 @@ footer .social {
     .comp{
         grid-area: comp;
     } */
-.about-contain .abouttitle {
-  display: flex;
-  justify-content: center;
-}
-.about-contain .aboutcontent {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "aboutlist about1" "about2 aboutdescrip";
-}
-.about-contain .aboutlist {
-  grid-area: aboutlist;
-}
-.about-contain .about1 {
-  grid-area: about1;
-}
-.about-contain .about2 {
-  grid-area: about2;
-}
-.about-contain .aboutdescrip {
-  grid-area: aboutdescrip;
-}
-@media (min-width: 768px) {
-  .about-contain img {
-    width: 289px;
-    height: 280px;
-  }
-}
-@media (min-width: 992px) {
-  .about-contain img {
-    width: 460px;
-    height: 433px;
-  }
-}
-
-.hero img {
-  width: 100%;
-}
-
-/* =============
-    Card
-============= */
 .card-grid {
   background-color: #E9D3DA;
   display: grid;
@@ -785,114 +662,223 @@ footer .social {
   .card-grid .ourstory .story-content {
     margin: -345px 0px 240px 300px;
   }
-  .card-grid .ourstory .headline .storyphoto {
+  .card-grid .ourstory .storyphoto {
     display: flex;
     justify-content: left;
     padding: 16px;
   }
-  .card-grid .ourstory .story-button {
+  .card-grid .story-button {
     background-color: none;
     display: flex;
     justify-content: end;
   }
-  .card-grid .ourstory .shop {
+  .card-grid .shop {
     margin: 16px 120px 100px 16px;
     padding: none;
     grid-area: shop;
   }
-  .card-grid .ourstory .shop .shopcontain .shop-content {
+  .card-grid .shop .shopcontain .shop-content {
     justify-content: right;
     margin: 0px 25px 0px -50px;
   }
-  .card-grid .ourstory .shop .shopcontain .shop-button {
+  .card-grid .shop .shopcontain .shop-button {
     display: flex;
     justify-content: center;
   }
-  .card-grid .ourstory .shop .shopcontain .shopphoto {
+  .card-grid .shop .shopcontain .shopphoto {
     display: flex;
     justify-content: center;
     padding: 16px;
   }
-  .card-grid .ourstory .cafe {
+  .card-grid .cafe {
     margin: 16px 120px 100px 16px;
     grid-area: cafe;
     padding: 16px;
   }
-  .card-grid .ourstory .cafe .cafecontain {
+  .card-grid .cafe .cafecontain {
     margin-top: -24px;
   }
-  .card-grid .ourstory .cafe .cafe-content {
+  .card-grid .cafe .cafe-content {
     margin: -345px 0px 240px 300px;
   }
-  .card-grid .ourstory .cafe .cafephoto {
+  .card-grid .cafe .cafephoto {
     display: flex;
     justify-content: left;
     padding: 16px;
   }
-  .card-grid .ourstory .cafebutton {
+  .card-grid .cafebutton {
     background-color: none;
     display: flex;
     justify-content: end;
   }
-  .card-grid .ourstory .flora {
+  .card-grid .flora {
     margin: 16px 120px 100px 16px;
     padding: none;
     grid-area: flora;
   }
-  .card-grid .ourstory .flora .floracontain .flora-content {
+  .card-grid .flora .floracontain .flora-content {
     justify-content: left;
     margin: 0px 25px 0px -50px;
   }
-  .card-grid .ourstory .flora .floracontain .flora-button {
+  .card-grid .flora .floracontain .flora-button {
     display: flex;
     justify-content: center;
   }
-  .card-grid .ourstory .flora .floracontain .floraphoto {
+  .card-grid .flora .floracontain .floraphoto {
     display: flex;
     justify-content: center;
     padding: 16px;
   }
 }
 
-/* =============
-    Product Design
-============= */
-.product-design {
+.carousel {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.carousel img {
+  width: 12px;
+  height: 12px;
+  border: none;
+}
+
+.herotxt {
+  justify-content: center;
+}
+
+.about-contain .abouttitle {
+  display: flex;
+  justify-content: center;
+}
+.about-contain .aboutcontent {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "aboutlist about1" "about2 aboutdescrip";
+}
+.about-contain .aboutlist {
+  grid-area: aboutlist;
+}
+.about-contain .about1 {
+  grid-area: about1;
+}
+.about-contain .about2 {
+  grid-area: about2;
+}
+.about-contain .aboutdescrip {
+  grid-area: aboutdescrip;
 }
 @media (min-width: 768px) {
-  .product-design {
-    grid-template-columns: 50% 50%;
+  .about-contain img {
+    width: 289px;
+    height: 280px;
   }
 }
 @media (min-width: 992px) {
-  .product-design {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "our-story our-story shop" "flora . shop" "flora cafe cafe";
-  }
-}
-@media (min-width: 992px) {
-  .product-design .our-story-container {
-    grid-area: our-story;
-  }
-}
-@media (min-width: 992px) {
-  .product-design .shop-container {
-    grid-area: shop-story;
-  }
-}
-@media (min-width: 992px) {
-  .product-design .flora-container {
-    grid-area: flora-story;
-  }
-}
-@media (min-width: 992px) {
-  .product-design .cafe-container {
-    grid-area: cafe-story;
+  .about-contain img {
+    width: 460px;
+    height: 433px;
   }
 }
 
-img {
-  width: 100%;
+.herostory {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". herocontent .";
+}
+.herostory .herocontent {
+  grid-area: herocontent;
+}
+
+.hp2, .hp3 {
+  font-weight: 400;
+}
+
+.herotitle {
+  display: flex;
+  justify-content: center;
+}
+
+.diff {
+  background-color: #E9D3DA;
+}
+.diff .diffheader {
+  display: flex;
+  justify-content: center;
+}
+.diff .diffsub {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.diffphoto {
+  display: flex;
+  margin: auto;
+}
+@media (min-width: 576px) {
+  .diffphoto {
+    width: 393px;
+    height: 491px;
+  }
+}
+@media (min-width: 992px) {
+  .diffphoto {
+    width: 616px;
+    height: 790px;
+  }
+}
+@media (min-width: 1200px) {
+  .diffphoto {
+    width: 696px;
+    height: 893px;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.listul {
+  list-style: none;
+  /*display: flex;
+  align-items: flex-end;
+  padding: 5px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "triroast randomtea boltedblue" "oldblood stitchprism crustvegan" "zoet cuttalossa nuance";
+}
+.listul img {
+  width: 40px;
+  height: 40px;
+  margin: 20px 200px 0px 20px;
+}
+
+.peicha {
+  display: flex;
+  margin: auto;
+}
+@media (min-width: 576px) {
+  .peicha {
+    width: 393px;
+    height: 585px;
+  }
+}
+@media (min-width: 992px) {
+  .peicha {
+    width: 613px;
+    height: 917px;
+  }
+}
+@media (min-width: 1200px) {
+  .peicha {
+    width: 696px;
+    height: 1039px;
+  }
+}
+
+.foundertext {
+  display: flex;
+  margin: auto;
 }

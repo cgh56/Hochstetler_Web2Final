@@ -352,14 +352,8 @@ template {
 /* =============
     Base
 ============= */
-.container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". content .";
-}
-
-.content {
-  grid-area: content;
+body {
+  margin: none;
 }
 
 img {
@@ -369,6 +363,48 @@ img {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: none;
+}
+
+header {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4A3730;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* =============
     Buttons
 ============= */
@@ -392,6 +428,9 @@ textarea {
 
 /* =============
     Navigation
+============= */
+/* =============
+    Nav
 ============= */
 nav {
   display: none;
@@ -420,6 +459,7 @@ nav aside {
 nav aside button {
   background-color: transparent;
   border-style: none;
+  color: #4A3730;
 }
 nav aside button:hover {
   cursor: pointer;
@@ -478,70 +518,27 @@ nav ul li:first-child {
     Header
 ============= */
 header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
+  background-color: #D1C9C7;
+  grid-template-columns: 40px auto 40px;
   grid-template-areas: ". header .";
-  padding: 24px 0;
-  width: 100%;
-  background-color: #D1C9C7;
-  background-color: #D1C9C7;
 }
-header div {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "logo burger";
+header .logo {
+  width: fit-content;
 }
-@media (min-width: 768px) {
-  header div {
-    grid-template-areas: "VV-logo.png";
-  }
-}
-@media (min-width: 992px) {
-  header div {
-    grid-template-areas: "VV-logo.png";
-  }
-}
-header div .burger-container {
+header .nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: end;
+  padding-top: 8px;
+  padding-right: 16px;
 }
-@media (min-width: 992px) {
-  header div .burger-container {
-    display: none;
-  }
+header .nav .nav1, header .nav .nav2, header .nav .nav3, header .nav .nav4 {
+  padding: 5px;
+  padding-left: 30px;
 }
-header div .burger-container button {
-  border-style: none;
-  background-color: transparent;
-  color: #4A3730;
-  font-size: 40px;
-}
-header div .burger-container button:hover {
-  cursor: pointer;
-}
-header img {
-  width: 200px;
-}
-
-nav {
-  width: 440px;
-  margin: 0px auto;
-}
-
-ul {
-  list-style-type: none;
-  padding-top: 0px;
-}
-
-li a {
-  display: block;
-  color: #D1C9C7;
-  padding: 15px 15px 15px 15px;
-  text-decoration: none;
-  font-size: 15px;
-  float: left;
+header .content {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "logo nav";
 }
 
 /* =============
@@ -571,122 +568,6 @@ footer .social {
   padding-top: 25px;
 }
 
-/* .vault{
-        grid-area: 2022;
-    }
-
-    .all{
-        grid-area: all;
-    }
-
-    .priv{
-        grid-area: priv;
-    }
-
-    .ftcontent{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: right;
-
-    }
-*/
-/*.phone, .comp, .rights{
-    justify-content: left;
-}
-
-.social{
-    img{
-        padding-left: 5px;
-    }
-    display: 100%;
-    margin-left: 89%;
-    margin-top: -115px;
-    padding: 5px;
-}
-
-.priv{
-    display: 100%;
-    margin-left: 91%;
-    margin-top: -20px;
-    padding: 10px;
-}
-
-.rights{
-
-    margin-left: 200px;
-
-    margin-top: -45px;
-}
-    /*.mail{
-      // display: flex;
-   // justify-content: right ;
-    grid-area: mail;
-    }
-
-    .priv{
-        //display: flex;
-      // justify-content: right ;
-        grid-area: priv;
-    }
-
-    .rights{
-      // display: flex;
-    //justify-content: right ;
-    grid-area: rights;
-    }
-
-    .phone{
-        grid-area: phone;
-    }
-
-    .social{
-        grid-area: social;
-    }
-
-    .comp{
-        grid-area: comp;
-    } */
-.about-contain .abouttitle {
-  display: flex;
-  justify-content: center;
-}
-.about-contain .aboutcontent {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "aboutlist about1" "about2 aboutdescrip";
-}
-.about-contain .aboutlist {
-  grid-area: aboutlist;
-}
-.about-contain .about1 {
-  grid-area: about1;
-}
-.about-contain .about2 {
-  grid-area: about2;
-}
-.about-contain .aboutdescrip {
-  grid-area: aboutdescrip;
-}
-@media (min-width: 768px) {
-  .about-contain img {
-    width: 289px;
-    height: 280px;
-  }
-}
-@media (min-width: 992px) {
-  .about-contain img {
-    width: 460px;
-    height: 433px;
-  }
-}
-
-.hero img {
-  width: 100%;
-}
-
-/* =============
-    Card
-============= */
 .card-grid {
   background-color: #E9D3DA;
   display: grid;
@@ -697,16 +578,16 @@ footer .social {
   background: none;
 }
 .card-grid button img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 .card-grid article {
   background-color: #fff;
 }
 @media (min-width: 576px) {
   .card-grid img {
-    width: 332px;
-    height: 320px;
+    width: 390px;
+    height: 340px;
     display: flex;
     margin: auto;
   }
@@ -743,114 +624,105 @@ footer .social {
   .card-grid .ourstory .story-content {
     margin: -345px 0px 240px 300px;
   }
-  .card-grid .ourstory .headline .storyphoto {
+  .card-grid .storyphoto {
     display: flex;
     justify-content: left;
-    padding: 16px;
-  }
-  .card-grid .ourstory .story-button {
-    background-color: none;
-    display: flex;
-    justify-content: end;
-  }
-  .card-grid .ourstory .shop {
-    margin: 16px 120px 100px 16px;
-    padding: none;
-    grid-area: shop;
-  }
-  .card-grid .ourstory .shop .shopcontain .shop-content {
-    justify-content: right;
-    margin: 0px 25px 0px -50px;
-  }
-  .card-grid .ourstory .shop .shopcontain .shop-button {
-    display: flex;
-    justify-content: center;
-  }
-  .card-grid .ourstory .shop .shopcontain .shopphoto {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-  }
-  .card-grid .ourstory .cafe {
-    margin: 16px 120px 100px 16px;
-    grid-area: cafe;
-    padding: 16px;
-  }
-  .card-grid .ourstory .cafe .cafecontain {
-    margin-top: -24px;
-  }
-  .card-grid .ourstory .cafe .cafe-content {
-    margin: -345px 0px 240px 300px;
-  }
-  .card-grid .ourstory .cafe .cafephoto {
-    display: flex;
-    justify-content: left;
-    padding: 16px;
-  }
-  .card-grid .ourstory .cafebutton {
-    background-color: none;
-    display: flex;
-    justify-content: end;
-  }
-  .card-grid .ourstory .flora {
-    margin: 16px 120px 100px 16px;
-    padding: none;
-    grid-area: flora;
-  }
-  .card-grid .ourstory .flora .floracontain .flora-content {
-    justify-content: left;
-    margin: 0px 25px 0px -50px;
-  }
-  .card-grid .ourstory .flora .floracontain .flora-button {
-    display: flex;
-    justify-content: center;
-  }
-  .card-grid .ourstory .flora .floracontain .floraphoto {
-    display: flex;
-    justify-content: center;
     padding: 16px;
   }
 }
+.card-grid .story-button {
+  background-color: none;
+  display: flex;
+  justify-content: end;
+}
+.card-grid .shop {
+  margin: 16px 120px 100px 16px;
+  padding: none;
+  grid-area: shop;
+}
+.card-grid .shop .shopcontain .shop-content {
+  justify-content: right;
+  margin: 0px 25px 0px -50px;
+}
+.card-grid .shop .shopcontain .shop-button {
+  display: flex;
+  justify-content: center;
+}
+.card-grid .shop .shopcontain .shopphoto {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+.card-grid .cafe {
+  margin: 16px 120px 100px 16px;
+  grid-area: cafe;
+  padding: 16px;
+}
+.card-grid .cafe .cafecontain {
+  margin-top: -24px;
+}
+.card-grid .cafe .cafe-content {
+  margin: -345px 0px 240px 300px;
+}
+.card-grid .cafe .cafephoto {
+  display: flex;
+  justify-content: left;
+  padding: 16px;
+}
+.card-grid .cafebutton {
+  background-color: none;
+  display: flex;
+  justify-content: end;
+}
+.card-grid .flora {
+  margin: 16px 120px 100px 16px;
+  padding: none;
+  grid-area: flora;
+}
+.card-grid .flora .floracontain .flora-content {
+  justify-content: left;
+  margin: 0px 25px 0px -50px;
+}
+.card-grid .flora .floracontain .flora-button {
+  display: flex;
+  justify-content: center;
+}
+.card-grid .flora .floracontain .floraphoto {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
 
-/* =============
-    Product Design
-============= */
-.product-design {
+.about-contain .abouttitle {
+  display: flex;
+  justify-content: center;
+}
+.about-contain .aboutcontent {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "aboutlist about1" "about2 aboutdescrip";
+}
+.about-contain .aboutlist {
+  grid-area: aboutlist;
+}
+.about-contain .about1 {
+  grid-area: about1;
+}
+.about-contain .about2 {
+  grid-area: about2;
+}
+.about-contain .aboutdescrip {
+  grid-area: aboutdescrip;
 }
 @media (min-width: 768px) {
-  .product-design {
-    grid-template-columns: 50% 50%;
+  .about-contain img {
+    width: 289px;
+    height: 280px;
   }
 }
 @media (min-width: 992px) {
-  .product-design {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "our-story our-story shop" "flora . shop" "flora cafe cafe";
+  .about-contain img {
+    width: 460px;
+    height: 433px;
   }
-}
-@media (min-width: 992px) {
-  .product-design .our-story-container {
-    grid-area: our-story;
-  }
-}
-@media (min-width: 992px) {
-  .product-design .shop-container {
-    grid-area: shop-story;
-  }
-}
-@media (min-width: 992px) {
-  .product-design .flora-container {
-    grid-area: flora-story;
-  }
-}
-@media (min-width: 992px) {
-  .product-design .cafe-container {
-    grid-area: cafe-story;
-  }
-}
-
-img {
-  width: 100%;
 }

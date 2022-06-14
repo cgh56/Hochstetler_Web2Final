@@ -5,134 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
-  <!--Google Font-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Vault + Vine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Vault and Vine</title>
   </head>
-    
 
   <body>
-    <main>
-    <header> 
-      <div>
-          <img src="img/VV-logo.png" alt="Site Logo">
-     
-          <!-- Mobile Nav Icon, Won't Display on Desktop & Up-->
-          <aside class="burger-container">
-            <button id="burger-btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </aside>
-        
-        <!-- Menu Alters Between Mobile/Tablet & Desktop-->
-        <nav>
-            <aside class="hide-for-lg">
-               <button id="close-btn">
-                    <i class="fa-solid fa-xmark-large"></i>
-               </button> 
-            </aside>
-            <ul>
-               <li><a href="components_navigation.scss">OUR STORY</a></li>
-               <li><a href="components_navigation.scss">SHOP</a></li>
-               <li><a href="components_navigation.scss">FLORA</a></li>
-               <li><a href="components_navigation.scss">CAFE</a></li>
-            </ul>
-        </nav>
-        </div>
-      </header>
-  
-    
 
+    <header> 
+      <div class="content"> 
+        <div class="logo">
+        <img src="img/logo.svg" alt="logo">
+        </div>
+        <div class="nav">
+        <h4 class="nav1">Our Story</h4>
+        <h4 class="nav2">Shop</h4>
+        <h4 class="nav3">Flora</h4>
+        <h4 class="nav4">Cafe</h4>
+     </div>
+     </div>
+    </header>
 
     <section class="hero">
-      <div class="content">
-        <div class="grid-container">
-          <div class="grid-item p">
-          <img src="img/FLOWER-1.jpg" alt="flowers and plants">
-          <p>Welcome to Vault + Vine. We are a floral studio and thoughtfully curated retail space in East Falls, Philadelphia. Founded in 2017, our small group of humans are working together to shape the world we wish to live in.</p> 
-          </p>
-            
-    </div>
-  </section>
-
-<section class="card-grid">
-  <section class="card our-story-container">
-    <div class="content">
-      <div class="grid-container">
-        <h2>OUR STORY</h2>
-        <p class="grid-item p">
-      <div>
-        <img src="img/FLOWER-3.jpg" alt="OUR STORY plants">
-      <div>
- 
-        <p>Vault + Vine  aspires to support our community however we can. Learn more about us and our mission.</p> 
-      </div>    
-      <div class="story-button">
-        <button> <img src="img/button.svg" alt="button1"> </button>
-       </div> 
-      </div>
-    </div>
-  </section>
-
-
-  <section class="card shop-container">
-    <div class="content">
-      <div class="grid-container">
-        <div class="grid-item p">
-      <div>
-        <img src="img/FLOWER-3.jpg" alt="shop plants">
-        <h2>SHOP</h2>
-          
-        <p>Let Vault + Vine be your one stop shop for gifts and other items. Shop our local, sustainable, and unique offerings</p> 
-          
-      </div>
-      <div class="shop-button">
-        <button> <img src="img/button.svg" alt="button2"> </button>
-       </div>
-    </div>
-  </section>
-
-  <section class="card flora-container">
-    <div class="content">
-      <div class="grid-container">
-        <div class="grid-item p">
-      <div>
-        <img src="img/FLOWER-4.jpg" alt="FLORA plants">
-        <h2>FLORA</h2>
-           
-        <p>Vault + Vine offers a wide variety of locally grown and sourced flowers and other plants. Come in and browse our selection or order your arrangement online.</p>  
-      </div>
-      <div class="flora-button">
-        <button> <img src="img/button.svg" alt="button3"> </button>
-       </div>
-    </div>
-  </section>
-
-
-    <section class="card cafe-container">
-      <div class="content">
-        <div class="grid-container">
-          <div class="grid-item p">
-        <div>
-          <img src="img/coffee-2.jpg" alt="CAFE">
-          <h2>CAFE</h2>
-            
-          <p>Enjoy locally sourced coffee, tea and pastries at our in house cafe. Check out our cafe hours and plan your visit.</p> 
-          
-        </div>
-        <div class="cafe-button">
-          <button> <img src="img/button.svg" alt="button4"> </button>
-         </div>
+      <img src="img/succulents.jpg" alt="succulents">
+      <div class="succulent">
+        <ul>
+          <li> <img src="img/dotfill.svg" alt="dotfill"> </li>
+          <li> <img src="img/dot.svg" alt="dot2"> </li>
+          <li><img src="img/dot.svg" alt="dot3"></li>
+          <li><img src="img/dot.svg" alt="dot4"></li>
+          <li><img src="img/dot.svg" alt="dot5"></li>
+        </ul>
+        <p>Welcome to Vault + Vine. We are a floral studio and thoughtfully curated retail space in East Falls, Philadelphia. 
+        Founded in 2017, our small group of humans are working together to shape the world we wish to live in.</p>
       </div>
     </section>
-  </section>
 
- 
- <!----------------- About Us----------->
+
+
+
+<section class="card-grid">
+  <article class="ourstory"> 
+    <div class="storycontain">
+      <h2 Our Story> </h2>
+      <div class="story-large">
+    <div class="storyphoto">
+    <img src="img/ourstory.jpg" alt="ourstory">
+    </div> 
+        <div class="story-content">
+        <p>Vault + Vine aspires to support our community however we can. Learn more about us and our mission.</p>
+        </div>
+        <div class="story-button">
+        <button> <img src="img/button.svg" alt="button1"> </button>
+       </div>
+        </div>
+      </div>
+      </div>
+  </article>
+
+
+  <article class="shop"> 
+    <div class="shopcontain">
+      <h2 class="headline2">Shop</h2>
+    <div class="shopphoto">
+    <img src="img/shop.jpg" alt="shop">
+    </div> 
+       <div class="shop-content">
+        <p>Let Vault + Vine be your one stop shop for gifts and other items. Shop our local, sustainable, and unique offerings.</p>
+        </div>
+        <div class="shop-button">
+        <button><img src="img/button.svg" alt="button2"></button>
+        </div>
+       </div>
+      </div>
+    </div>
+       </article>
+  </article>
+
+
+  <article class="cafe"> 
+    <div class="cafecontain">
+      <h2 class="headline3">Café</h2>
+    <div class="cafephoto">
+    <img src="img/coffee-2.jpg" alt="coffee-2">
+    </div> 
+        <div class="cafe-content">
+        <p>Enjoy locally sourced coffee, tea and pastries at our in house café. Check out our café hours and plan your visit.</p>
+        </div>
+        <div class="cafebutton">
+        <button><img src="img/button.svg" alt="button3"></button>
+        </div>
+      </div>
+       </div>
+  </article>
+
+
+  <article class="flora"> 
+    <div class="floracontain">
+      <h2 class="headline4">Flora</h2>
+    <div class="floraphoto">
+    <img src="img/flora.jpg" alt="flora">
+    </div> 
+       <div class="flora-content">
+        <p>Vault + Vine offers a wide variety of locally grown and sourced flowers and other plants. Come in and browse our selection or order your arrangement online.</p>
+        </div>
+        <div class="flora-button">
+        <button><img src="img/button.svg" alt="button4"></button>
+        </div>
+        <div>
+       </div>
+  </article>
+</section>
+
+
+
 <section class="about-contain">
   <h1 class="abouttitle">About Us</h1>
   <div class="aboutcontent"> 
@@ -149,45 +137,35 @@
       <li>A café and gathering place. </li> 
     </ul>
   </div>
-    <img src="img/about1.jpg" class="about1" alt="about1">
+    <img src="img/orangeflower.jpg" class="orangeflower" alt="orangeflower">
   
-      <div class="aboutdescrip">
+      <div class="aboutdescription">
       <p>At the heart of our shop is love for our community and a desire to create, promote, and connect with our neighbors. Our vision is to create a community of businesses 
         and customers that supports, promotes, and celebrates the local and global economy and by demanding accountability in every aspect of the supply chain.</p>
         </div>
-        <img src="img/about2.jpg" class="about2" alt="about2">
+        <img src="img/purpleflower.jpg" class="purpleflower" alt="purpleflower">
  </div>
 </section>
-
 <footer>
   <div class="ftcontent">
     <div class="phone">
-       <h3> <img src="img/phone.svg" alt="phone"> 267-331-6292</h3>
+       <h3> <img src="img/phone.svg" alt="cellphone"> 267-331-6292</h3>
        <h5>2022 Vault + Vine LLC.</h5>
     </div>
 
     <div class="mail">
-       <h3><img src="img/mail.svg" alt="mail"> Contact Us </h3>
+       <h3><img src="img/mail.svg" alt="email"> Contact Us </h3>
        <h5>All Rights Reserved</h5>
       </div>
 
       <div class="social">
-        <img src="img/insta.svg" alt="insta"> <img src="img/facebook.svg" alt="facebook"> <img src="img/twitter.svg" alt="twitter">
+        <img src="img/insta.svg" alt="instagram"> <img src="img/facebook.svg" alt="facebook"> <img src="img/twitter.svg" alt="twitter">
         <h5>Privacy Policy</h5>
      </div>
   </div>
 
 </footer> 
-    
-    <script src="js/scripts-min.js"></script>
-  </main>
+
+<script src="js/scripts-min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-

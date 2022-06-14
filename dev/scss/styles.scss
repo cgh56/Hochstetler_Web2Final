@@ -19,7 +19,10 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/_about";
-@import "sections/_hero";
-@import "sections/_partners";
-@import "sections/_product-design";
+@import "sections/card-grid"; 
+@import "sections/hero";
+@import "sections/about";
+@import "sections/hero-2.scss";
+@import "sections/location.scss";
+@import "sections/menu.scss";
+

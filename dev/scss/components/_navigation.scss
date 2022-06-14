@@ -1,6 +1,9 @@
 /* =============
     Navigation
 ============= */
+ /* =============
+    Nav
+============= */
 nav {
 	// this makes the nav not show up on the mobile sizes
     display: none;
@@ -27,7 +30,7 @@ nav {
 		button {
 			background-color: transparent;
 			border-style: none;
-			
+			color: #4A3730;
 			
 			&:hover{ 
 				cursor: pointer; 
